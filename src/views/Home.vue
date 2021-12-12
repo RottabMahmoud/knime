@@ -1,13 +1,13 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <v-col align="right" cols="6">
+      <v-col align="right" cols="4">
         <!--Our Search Input Field Component -->
         <Search :nodes="allNodes" :search="addNode" />
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-col cols="6">
+      <v-col cols="4">
         <!--Our Selected Nodes in the System -->
         <v-list>
           <draggable

@@ -2,13 +2,16 @@
 
 ## What the Application does
 
-- Hello Knime
+- Display's a simple workflow with simple nodes.
+- Display's a search field when typing, show list of possible new nodes to add from a list, while allowing adding nodes to the workflow with AutoComplete feature.
+- Allowed moving of nodes (drag & drop).
 
 ## Technologies
 
 - Vue
 - Vue Router
-- Vuex (Installed but not used)
+- Vuex 
+- Vue draggable
 - JavaScript
 - Vuetify
 
@@ -44,9 +47,6 @@ Used Vuetify as a Component Library.
     │  ├─ favicon.ico
     │  ├─ index.html
     ├─ src
-    │  ├─ assets
-    │  │  ├─ logo.png
-    │  │  ├─ logo.svg
     │  ├─ components
     │  │  ├─ Search.vue
     │  ├─ plugins
@@ -74,4 +74,6 @@ Used Vuetify as a Component Library.
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Badge
+<a href="https://www.linkedin.com/in/rottab/"> <img src="https://img.shields.io/badge/Mahmoud%20Rottab-LinkedIn-red" alt="KNIME" /> </a>
+
 
