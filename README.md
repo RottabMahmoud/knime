@@ -87,6 +87,6 @@ Used Vuetify as a UI Component Library.
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Badge
-<a href="https://www.linkedin.com/in/rottab/"> <img src="https://img.shields.io/badge/Mahmoud%20Rottab-LinkedIn-red" alt="KNIME" /> </a>
+<a href="https://www.knime.com/"> <img src="https://img.shields.io/badge/Mahmoud%20Rottab-KNIME-red" alt="KNIME" /> </a>
 
 
