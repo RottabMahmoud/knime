@@ -14,6 +14,7 @@
 - Vue draggable
 - JavaScript
 - Vuetify
+- Jest
 
 ## Project Installation
 
