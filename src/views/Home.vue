@@ -39,8 +39,8 @@ export default {
   components: { Search, draggable },
   data() {
     return {
-      nodes: [],
-      used_nodes: [],
+      nodes: [], // (Hint.) would've used that rather than using a vuex state.
+      used_nodes: this.allSystem_Nodes,
     };
   },
   computed: mapGetters(["allNodes", "allSystem_Nodes"]),

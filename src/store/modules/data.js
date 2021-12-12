@@ -1,3 +1,5 @@
+// import axios from 'axios'; (HINT.) would've used axios to fetch a mock API rather than an hard coded list.
+
 const state = {
   nodes: [
     {
