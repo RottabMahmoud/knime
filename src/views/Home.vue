@@ -1,26 +1,25 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <Search />
-      <!-- <v-col align="center" cols="12"> HELLO KNIME</v-col> -->
+    <v-row justify="center">
+      <v-col align="right" cols="6">
+        <!--Our Search Input Field Component -->
+        <Search :nodes="allNodes" :search="addNode" />
+      </v-col>
     </v-row>
-    <v-row>
-      <v-col cols="12">
+    <v-row justify="center">
+      <v-col cols="6">
+        <!--Our Selected Nodes in the System -->
         <v-list>
           <draggable
-            class="
-              d-flex
-              pa-xs-4
-              ma-10
-              align-content-space-around
-              flex-wrap
-              rounded-lg
-            "
-            v-model="list_a"
+            class="d-flex justify-space-around align-content-center flex-wrap"
+            v-model="used_nodes"
           >
-            <div v-for="(i, index) in list_a" :key="i">
-              <v-list-item>{{ i }}</v-list-item>
-              <v-divider v-if="index < 4"></v-divider>
+            <div class="ma-5" v-for="item in allSystem_Nodes" :key="item.id">
+              <strong>{{ item.title }} </strong>
+              <v-list-item>
+                <img style="height: 4em" :src="item.icon" />
+              </v-list-item>
+              <div class="ml-5">{{ item.description }}</div>
             </div>
           </draggable>
         </v-list>
@@ -30,6 +29,8 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 import Search from "../components/Search.vue";
 import draggable from "vuedraggable";
 
@@ -38,13 +39,13 @@ export default {
   components: { Search, draggable },
   data() {
     return {
-      list_a: ["a1", "a2", "a3", "a4", "a5"],
-      list_b: ["b1", "b2", "b3", "b4", "b5"],
+      nodes: [],
+      used_nodes: [],
     };
   },
-  created() {},
-  beforeUpdate() {},
-
-  methods: {},
+  computed: mapGetters(["allNodes", "allSystem_Nodes"]),
+  methods: {
+    ...mapActions(["addNode"]),
+  },
 };
 </script>

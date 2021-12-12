@@ -1,30 +1,25 @@
 <template>
-  <v-row>
-    <v-col align="center" cols="12">
-      <v-autocomplete
-        v-model="value"
-        :items="items"
-        dense
-        filled
-        label="Filled"
-      >
-      </v-autocomplete>
-    </v-col>
-  </v-row>
+  <v-main>
+    <v-autocomplete
+      @change="search(value)"
+      v-model="value"
+      :items="nodes.map((x) => x.title)"
+      dense
+      filled
+      label="Add new node..."
+    >
+    </v-autocomplete>
+  </v-main>
 </template>
 
 <script>
 export default {
   name: "Search",
+  props: ["nodes", "search"],
   data() {
     return {
-      items: ["foo", "bar", "fizz", "buzz"],
       value: null,
     };
   },
-  created() {},
-  beforeUpdate() {},
-
-  methods: {},
 };
 </script>

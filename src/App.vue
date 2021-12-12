@@ -1,20 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-toolbar-title>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </v-toolbar-title>
-    </v-app-bar>
     <v-main>
-      <router-view />
+      <AppBar />
     </v-main>
   </v-app>
 </template>
 
 <script>
+import AppBar from "./components/AppBar.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: { AppBar },
 };
 </script>
