@@ -2,9 +2,9 @@
 
 ## What the Application does
 
-- Display's a simple workflow with simple nodes.
-- Display's a search field when typing, show list of possible new nodes to add from a list, while allowing adding nodes to the workflow with AutoComplete feature.
-- Allowed moving of nodes (drag & drop).
+- Displays a simple workflow with simple nodes.
+- Displays a search field when typing, show list of possible new nodes to add from a list, while allowing adding nodes to the workflow with AutoComplete feature.
+- Allows moving of nodes (drag & drop). (Optional point)
 
 ## Technologies
 
@@ -21,13 +21,19 @@
 ```bash
 git clone https://github.com/Rottabx/knime.git
 cd knime
-yarn
+yarn 
 ```
 
 ## To Start the App
 
 ```bash
 yarn serve
+```
+
+## To Test the App
+
+```bash
+yarn jest
 ```
 
 ## For Building
@@ -38,7 +44,7 @@ yarn build
 
 ## Usage
 
-Used Vuetify as a Component Library.
+Used Vuetify as a UI Component Library.
 
 ## Project Hierarchy
 
@@ -59,6 +65,10 @@ Used Vuetify as a Component Library.
     │  ├─ views
     │  │  ├─ Home.vue
     │  │  ├─ About.vue   
+    │  │  └─ index.js   
+    │  ├─ tests
+    │  │    └─ unit
+    │  │       └─ home.spec.js
     │  │─ App.vue
     │  │─ main.js
     ├─ .gitignore
@@ -67,6 +77,8 @@ Used Vuetify as a Component Library.
     ├─ babel.config.js
     ├─ package-lock.json
     ├─ README.md
+    ├─ vue.config.js
+    ├─ jest.config.js
     └─ yarn.lock
 ```
 

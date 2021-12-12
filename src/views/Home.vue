@@ -39,7 +39,7 @@ export default {
   components: { Search, draggable },
   data() {
     return {
-      nodes: [], // (Hint.) would've used that rather than using a vuex state.
+      nodes: [], // (Hint.) would've used that rather than using a vuex state for the Input Search field prop.
       used_nodes: this.allSystem_Nodes,
     };
   },

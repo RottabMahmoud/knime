@@ -1,15 +1,14 @@
 <template>
-  <v-main>
-    <v-autocomplete
-      @change="search(value)"
-      v-model="value"
-      :items="nodes.map((x) => x.title)"
-      dense
-      filled
-      label="Add new node..."
-    >
-    </v-autocomplete>
-  </v-main>
+  <v-autocomplete
+    class="v-input__slot"
+    @change="search(value)"
+    v-model="value"
+    :items="nodes.map((x) => x.title)"
+    dense
+    filled
+    label="Add new node..."
+  >
+  </v-autocomplete>
 </template>
 
 <script>
